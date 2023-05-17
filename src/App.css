@@ -1,5 +1,9 @@
 .App {
-  text-align: center;
+
+}
+body{
+  background-color: #292834;
+  color: white;
 }
 
 .App-logo {
@@ -34,5 +38,72 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+.link-box{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+@media (min-width: 480px){
+  .link-box{
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+.active-link {
+  font-weight: bold;
+  color: white;
+}
+.inactive-link{
+  color: lightgray;
+}
+
+.cb-logo{
+  position: absolute;
+}
+.logo-l{
+  animation: App-logo-spin 80s infinite linear;
+}
+.logo-s{
+  animation: App-logo-spin 60s infinite linear;
+  /* animation-direction: reverse; */
+}
+
+.main-content{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  width: 75%;
+  margin: auto;
+}
+
+.bg{
+  position: absolute;
+  background-image: url('./crumple.png');
+  opacity: 0.2;
+  width: 100%;
+  height: 100%;
+}
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 20px 20px 20px;
+  padding: 0px 0px 20px 0px;
+}
+
+
+
+@media (min-width:1000px){
+  .header{
+    margin: 0px 100px 20px 100px;
+    padding: 0px 0px 20px 0px;
+  }
+  .main-content{  
+    width: 55%;
   }
 }
