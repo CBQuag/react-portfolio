@@ -3,7 +3,7 @@
 }
 body{
   background-color: #292834;
-  color: white;
+  color: rgb(252, 238, 193);
 }
 
 .App-logo {
@@ -25,7 +25,7 @@ body{
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: rgb(255, 248, 229);
 }
 
 .App-link {
@@ -51,29 +51,31 @@ body{
   .link-box{
     flex-direction: row;
     align-items: center;
+    padding-right: 3%;
   }
 }
 
 .active-link {
   font-weight: bold;
-  color: white;
+  color: rgb(252, 238, 193);
 }
 .inactive-link{
-  color: lightgray;
+  color: rgb(162, 146, 108);
 }
 
 .cb-logo{
   position: absolute;
+  margin-left: 3%;
 }
 .logo-l{
   animation: App-logo-spin 80s infinite linear;
 }
 .logo-s{
   animation: App-logo-spin 60s infinite linear;
-  /* animation-direction: reverse; */
 }
 
 .main-content{
+  padding-top: 160px;
   display: flex;
   flex-direction: column;
   align-items: start;
@@ -83,27 +85,60 @@ body{
 
 .bg{
   position: absolute;
+  margin-top: 100px;
   background-image: url('./crumple.png');
+  background-size: cover;
   opacity: 0.2;
   width: 100%;
   height: 100%;
 }
 
 .header{
+  position: fixed;
+  width: 100%;
+  height: 100px;
+  background-color: #1c1c24;;
   display: flex;
   justify-content: space-between;
-  margin: 0px 20px 20px 20px;
-  padding: 0px 0px 20px 0px;
+  padding: 20px 0px 20px 0px;
+  
+  
+}
+.about-me{
+  display: flex;
+}
+.mobilePic{
+  display: none;
 }
 
+@media (max-width:590px){
+  .about-me{
+    flex-direction: column;
+    align-items: start;
+  }
+  .mobilePic{
+    display: block;
+    margin-left: 40px;
+  }
+  .sidePic{
+    display: none;
+  }
 
+}
 
-@media (min-width:1000px){
+@media (min-width:800px){
   .header{
-    margin: 0px 100px 20px 100px;
-    padding: 0px 0px 20px 0px;
+    margin: 0px 0px 20px 0px;
+    padding: 20px 0px 20px 0px;
   }
   .main-content{  
     width: 55%;
   }
+  .cb-logo,.logo-l,.logo-s{
+    margin-left: 15%;
+  }
+  .link-box{
+    padding-right: 15%;
+  }
+  
 }

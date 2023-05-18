@@ -3,7 +3,8 @@ import '../App.css'
 const Introduction = () => {
     
     let style = {
-       fontSize:'40px' 
+        fontSize: '40px',
+        color:'rgb(246, 241, 181)'
     }
     
     return (

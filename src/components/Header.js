@@ -3,16 +3,8 @@ import { NavLink, Route, Routes } from 'react-router-dom'
 import Projects from './Projects'
 
 
-const activeLink = "active-link";
-
 
 const Header = (props) => {
-    let box = {
-        display: 'flex',
-        justifyContent: 'space-between',
-        margin: '0px 20px 20px 20px',
-        padding:'0px 0px 20px 0px',
-    }
     let image = {
         width: '100px',
         height:'100px',
