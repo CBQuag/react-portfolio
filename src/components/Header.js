@@ -25,7 +25,8 @@ const Header = (props) => {
             <nav className='link-box'>
                 <NavLink style={link} className={({isActive}) => isActive ? "active-link" : "inactive-link"} to='/introduction'>Introduction</NavLink>
                 <NavLink style={link} className={({isActive}) => isActive ? "active-link" : "inactive-link"} to='/projects'>Projects</NavLink>
-                <NavLink style={link} className={({isActive}) => isActive ? "active-link" : "inactive-link"} to='/about-me'>About Me</NavLink>
+                <NavLink style={link} className={({ isActive }) => isActive ? "active-link" : "inactive-link"} to='/about-me'>About Me</NavLink>
+                <NavLink style={link} className={({isActive}) => isActive ? "active-link" : "inactive-link"} to='/contact'>Contact</NavLink>
             </nav>
         </div>
     )

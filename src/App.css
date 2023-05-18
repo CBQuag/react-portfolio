@@ -28,9 +28,6 @@ body{
   color: rgb(255, 248, 229);
 }
 
-.App-link {
-  color: #61dafb;
-}
 
 @keyframes App-logo-spin {
   from {
@@ -41,20 +38,30 @@ body{
   }
 }
 
+
+
+
+
+
+
+
+/* HEADER  */
+
+.header{
+  position: fixed;
+  width: 100%;
+  height: 100px;
+  background-color: #292834;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0px 20px 0px;
+ 
+}
 .link-box{
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 }
-
-@media (min-width: 480px){
-  .link-box{
-    flex-direction: row;
-    align-items: center;
-    padding-right: 3%;
-  }
-}
-
 .active-link {
   font-weight: bold;
   color: rgb(252, 238, 193);
@@ -62,7 +69,6 @@ body{
 .inactive-link{
   color: rgb(162, 146, 108);
 }
-
 .cb-logo{
   position: absolute;
   margin-left: 3%;
@@ -74,6 +80,10 @@ body{
   animation: App-logo-spin 60s infinite linear;
 }
 
+
+
+/* GENERIC MAIN CONTENT  */
+
 .main-content{
   padding-top: 160px;
   display: flex;
@@ -82,7 +92,6 @@ body{
   width: 75%;
   margin: auto;
 }
-
 .bg{
   position: absolute;
   margin-top: 100px;
@@ -92,24 +101,73 @@ body{
   width: 100%;
   height: 100%;
 }
-
-.header{
-  position: fixed;
-  width: 100%;
-  height: 100px;
-  background-color: #1c1c24;;
-  display: flex;
-  justify-content: space-between;
-  padding: 20px 0px 20px 0px;
-  
-  
+.hidden{
+  display: none;
 }
+
+
+
+/* ABOUT ME */
+
 .about-me{
   display: flex;
 }
 .mobilePic{
   display: none;
 }
+
+
+
+/* PROJECT */
+
+.project-link{
+  font-size: 60px;  
+  text-decoration: none;
+  color: rgb(251, 231, 184);
+  margin-left: 23%;
+  margin-top: 30px;
+  width: 100%;
+}
+.project-image{
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  margin: 0px 0px 10px 10px;
+}
+.project-image-main{
+  height: 510px;
+  object-fit: cover;
+}
+.project-image-box{
+  display: flex;
+  height: 520px;
+  width: 100%;
+  overflow-x: auto;
+  
+}
+.other-image-box{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.project-image:hover,.project-image-main:hover{
+  transform: scale(1.02);
+}
+.project-description{
+  width: 60%;
+  margin: auto;
+}
+.project-box{
+  margin-bottom: 80px;
+}
+.is-big{
+  position: absolute;
+}
+
+
+
+
+/* MEDIA QUERIES */
 
 @media (max-width:590px){
   .about-me{
@@ -124,8 +182,15 @@ body{
     display: none;
   }
 
-}
+  .project-link{
+    margin-left:12%;
 
+  }
+  .project-image-box{
+    /* flex-direction: column; */
+  }
+
+}
 @media (min-width:800px){
   .header{
     margin: 0px 0px 20px 0px;
@@ -141,4 +206,11 @@ body{
     padding-right: 15%;
   }
   
+}
+@media (min-width: 480px){
+  .link-box{
+    flex-direction: row;
+    align-items: center;
+    padding-right: 3%;
+  }
 }
