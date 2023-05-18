@@ -107,6 +107,24 @@ body{
 
 
 
+/* INTRODUCTION */
+
+.intro-images{
+  display: flex;
+  width: 100%;
+  animation: move 60s infinite linear;
+}
+@keyframes move {
+  0% {
+    transform: translate(0px);
+  }
+  100% {
+    transform: translate(-1860px);
+  }
+}
+
+
+
 /* ABOUT ME */
 
 .about-me{
@@ -154,11 +172,9 @@ body{
   transform: scale(1.02);
 }
 .project-image:active{
-  position: absolute;
-  z-index: 98;
-  margin-bottom: 250px;
-  width: 500px;
-  height: auto;
+  transform: scale(3);
+  object-fit: contain;
+
 }
 .project-description{
   width: 60%;

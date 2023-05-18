@@ -1,6 +1,5 @@
 import { NavLink, Route, Routes } from "react-router-dom"
 import Project from "./Project"
-import Saku from "./projects/Saku"
 
 
 const Projects = () => {

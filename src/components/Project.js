@@ -1,4 +1,5 @@
 import '../App.css'
+import ImageBlock from './ImageBlock';
 
 const Project = (props) => {
     let pCount = 0;
@@ -17,25 +18,10 @@ const Project = (props) => {
 
     return (
         <div className='project-box'>
-            <h1><a className="project-link" href={props.link}>{props.name}</a></h1>
-            <div className={mainImage?'project-image-box':'hidden'}>
-                <img
-                    onClick={()=>{switchSize()}}
-                    key={mainImage}
-                    className={enlarge}
-                    src={mainImage?require(`../project-img/${mainImage}`):null}
-                    alt={mainImage}
-                />
-                <div className='other-image-box'>
-                {images.map(image =>
-                    <img
-                        key={image}
-                        className='project-image'
-                        src={require(`../project-img/${image}`)}
-                        alt={image}
-                    />)}
-                </div>               
-            </div>
+            <h1>
+                <a className="project-link" href={props.link}>{props.name}</a>
+            </h1>
+            <ImageBlock images={props.images}/>
             <div className='project-description'>
                 {descriptionSeparated.map(desc => <p key={pCount++}>&emsp;&emsp;{desc}</p>)}
             </div>
