@@ -36,9 +36,9 @@ const Project = (props) => {
                     />)}
                 </div>               
             </div>
-            <p className='project-description'>
+            <div className='project-description'>
                 {descriptionSeparated.map(desc => <p key={pCount++}>&emsp;&emsp;{desc}</p>)}
-            </p>
+            </div>
         </div>
     )
 }

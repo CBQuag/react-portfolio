@@ -55,7 +55,7 @@ body{
   display: flex;
   justify-content: space-between;
   padding: 20px 0px 20px 0px;
- 
+  z-index: 99;
 }
 .link-box{
   display: flex;
@@ -141,9 +141,9 @@ body{
 .project-image-box{
   display: flex;
   height: 520px;
+  padding-top:5px;
   width: 100%;
-  overflow-x: auto;
-  
+  overflow-x: auto; 
 }
 .other-image-box{
   display: flex;
@@ -152,6 +152,13 @@ body{
 }
 .project-image:hover,.project-image-main:hover{
   transform: scale(1.02);
+}
+.project-image:active{
+  position: absolute;
+  z-index: 98;
+  margin-bottom: 250px;
+  width: 500px;
+  height: auto;
 }
 .project-description{
   width: 60%;
@@ -163,7 +170,6 @@ body{
 .is-big{
   position: absolute;
 }
-
 
 
 
@@ -214,3 +220,11 @@ body{
     padding-right: 3%;
   }
 }
+
+
+
+
+
+
+
+
