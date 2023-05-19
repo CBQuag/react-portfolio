@@ -18,9 +18,9 @@ const AboutMe = () => {
     
     return (
         <div className='main-content'>
-            <h1>Conrad Quagliaroli</h1>
-            <div className='about-me'>
             <img className='mobilePic' style={profilePic} src={require("../IMG_8458SQ.jpg")} alt="" />
+            <h1 className="my-name">Conrad Quagliaroli</h1>
+            <div className='about-me'>        
                 <p style={leftSide}>
                     &emsp;&emsp;I've been programming since high school in various languages, particularly focused on Java.
                     I've passed the core classes for a Computer Science degree at Georgia State University, although there were

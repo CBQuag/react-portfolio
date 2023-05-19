@@ -3,19 +3,9 @@ import ImageBlock from './ImageBlock';
 
 const Project = (props) => {
     let pCount = 0;
-
-    let images = props.images ? props.images.split(' ') : []
-    let mainImage = images.shift();
     
     let descriptionSeparated = props.description ? props.description.split('/br/') : [];
-
-    let enlarge = 'project-image-main'
-    
-    let switchSize = () => {
-        enlarge=enlarge==='project-image-main'?'is-big':'project-image-main'
-        console.log(enlarge)
-    }
-
+  
     return (
         <div className='project-box'>
             <h1>

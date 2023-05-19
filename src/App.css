@@ -1,5 +1,5 @@
 .App {
-
+ width: 100%;
 }
 body{
   background-color: #292834;
@@ -110,16 +110,20 @@ body{
 /* INTRODUCTION */
 
 .intro-images{
+  position: fixed;
   display: flex;
   width: 100%;
-  animation: move 60s infinite linear;
+  animation: move 30s infinite linear;
+}
+.trailing{
+  display: flex;
 }
 @keyframes move {
   0% {
     transform: translate(0px);
   }
   100% {
-    transform: translate(-1860px);
+    transform: translate(-2925px);
   }
 }
 
@@ -140,7 +144,7 @@ body{
 
 .project-link{
   font-size: 60px;  
-  text-decoration: none;
+  /* text-decoration: none; */
   color: rgb(251, 231, 184);
   margin-left: 23%;
   margin-top: 30px;
@@ -182,6 +186,7 @@ body{
 }
 .project-box{
   margin-bottom: 80px;
+  
 }
 .is-big{
   position: absolute;
@@ -198,7 +203,10 @@ body{
   }
   .mobilePic{
     display: block;
-    margin-left: 40px;
+    margin: auto;
+  }
+  .my-name{
+    margin: auto;
   }
   .sidePic{
     display: none;
@@ -209,7 +217,33 @@ body{
 
   }
   .project-image-box{
-    /* flex-direction: column; */
+    flex-direction: column;
+    height: auto;
+  }
+  .other-image-box{
+    flex-direction: row;
+
+  }
+  .trailing{
+    display: none;
+    
+  }
+  .project-image-main{
+    padding: 0 1% 1% 1%;
+  }
+  .project-image{
+    margin: 0;
+    width: 48%;
+    padding: 1% 1%;
+  }
+  .intro-images{
+    position: relative;
+    height: auto;
+    animation: none;
+    flex-direction: column;
+  }
+  .image-block{
+    width: 96%;
   }
 
 }

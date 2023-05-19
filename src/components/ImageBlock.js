@@ -13,7 +13,7 @@ const ImageBlock = (props) => {
     }
 
     return (
-        <div style={{marginLeft:'10px'}}>
+        <div className='image-block' style={{marginLeft:'10px'}}>
             <div className={mainImage?'project-image-box':'hidden'}>
                 <img
                     onClick={()=>{switchSize()}}
