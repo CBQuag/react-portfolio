@@ -87,7 +87,22 @@ const Projects = () => {
                 is shown horizontally, with the ai suggestions listed below. If the user clicks on the 'My Calendar' tab, they will
                 be presented with a calendar that finds the right dates and appends the correct information to each day.
                 "/>
-
+            <Project
+                link='https://github.com/CBQuag/react-portfolio'
+                images=''
+                name='This Portfolio!'
+                description="Many people will just use a template for these, but I figured that this would be a great opportunity
+                to use react for exactly the kind of project it was designed for as soon as we started covering it. Honestly, react
+                is such a dream to use in my opinion that quickly running through a project like this almost felt more like
+                a freeing, satisfyingly simple experience. Once I had gotten used to the quirks of the framework, it was nice to be able
+                to make all of the components and see just how neat and organized everything was. On top of that, it was fun to really stop
+                and style a site meticulously, as typically I would focus more on the pure functionality. 
+                /br/
+                At first it felt like going the long way around, but on top of the entertainment, it's been an interesting learning 
+                experience to look into how to get all kinds of styling gimmicks are implemented, and if I can be so bold, I think it's
+                competitive with the kinds of template sites that other people are paying for. Compared to even personal projects, there's 
+                really something different about making a project from scratch that you want to show the world!"
+            />
         </div>
     )
 }

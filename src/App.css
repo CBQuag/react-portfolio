@@ -213,8 +213,12 @@ body{
   }
 
   .project-link{
-    margin-left:12%;
-
+    margin-left:4%;
+    
+  }
+  .project-h1{
+    max-width: 100%;
+    /* margin: auto; */
   }
   .project-image-box{
     flex-direction: column;

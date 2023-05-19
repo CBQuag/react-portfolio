@@ -8,7 +8,7 @@ const Project = (props) => {
   
     return (
         <div className='project-box'>
-            <h1>
+            <h1 className='project-h1'>
                 <a className="project-link" href={props.link}>{props.name}</a>
             </h1>
             <ImageBlock images={props.images}/>
