@@ -12,6 +12,7 @@ function App() {
       {/* <div className='bg'></div> */}
       <Header />
       <Routes className='main-content'>
+      <Route path='/' element={<Introduction />}/>
         <Route path='/introduction' element={<Introduction />}/>
         <Route path='/projects' element={<Projects />}/>
         <Route path='/about-me' element={<AboutMe />} />

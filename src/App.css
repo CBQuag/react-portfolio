@@ -113,7 +113,7 @@ body{
   position: fixed;
   display: flex;
   width: 100%;
-  animation: move 30s infinite linear;
+  animation: move 40s infinite linear;
 }
 .trailing{
   display: flex;
