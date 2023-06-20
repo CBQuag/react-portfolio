@@ -91,6 +91,7 @@ body{
   align-items: start;
   width: 75%;
   margin: auto;
+  /* overflow-y: hidden; */
 }
 .bg{
   position: absolute;
@@ -123,7 +124,7 @@ body{
     transform: translate(0px);
   }
   100% {
-    transform: translate(-2925px);
+    transform: translate(-4330px);
   }
 }
 
